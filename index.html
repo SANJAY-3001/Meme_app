@@ -3,10 +3,64 @@
     <head>
         <title>Meme App</title>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap" rel="stylesheet">
     </head>
 
     <body>
 
+        <div class="container">
+
+            <header>
+
+                <div class="meme-header">
+                    <img src="images/pumpkin.png" class="pumpkin-img">
+                    <div class="meme-header-content">
+                        <h3>Pumpkin's Purrfect</h3>
+                        <h1>Meme Picker</h1>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+
+                <section>
+
+                    <h2>
+                        Select Your Current Emotion
+                    </h2>
+
+                    <div class="radio-emotions">
+                        <div class="radio-emotion">
+                            <label>moody</label>
+                            <input
+                            type="radio"
+                            >
+                        </div>
+                        <div class="radio-emotion">
+                            <label>moody</label>
+                            <input
+                            type="radio"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="gif-check">
+                        <label for="user-preference">Animated GIFs only</label>
+                        <input
+                        type="checkbox"
+                        id="user-preference"
+                        >
+                    </div>
+
+                    <div class="get-meme-image-btn">
+                        <button class="get-image-btn" id="get-image-btn">Get Image</button>
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
         
         <script src="scripts.js"></script>
     </body>

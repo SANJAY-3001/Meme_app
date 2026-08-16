@@ -1,0 +1,90 @@
+body
+{
+    margin: 0;
+    padding: 0;
+
+    font-family: "Karla" , sans-serif;
+    text-align: center;
+}
+
+.container
+{
+    width: 500px;
+    border: 1px solid black;
+    margin: 20px auto;
+}
+
+h1 , h3{
+    margin: 0;
+    color: #EED6D3;
+}
+
+header
+{
+    background-color: #67595E
+}
+
+
+.pumpkin-img
+{
+    width: 80px;
+    height: 90px;
+}
+
+.meme-header
+{
+    display: flex;
+    gap: 20px;
+    padding: 10px 0px 0px 50px;
+}
+
+.meme-header-content
+{
+    align-self: center;
+}
+
+.radio-emotions
+{
+    border: 1px solid #c5c3c3;
+    border-radius: 5px;
+    width: 250px;
+    margin: 20px auto;
+}
+
+.radio-emotion
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #c5c3c3;
+}
+
+input[type="radio"]
+{
+    width: 15px;
+    height: 15px;
+}
+input[type="checkbox"]
+{
+    width: 15px;
+    height: 15px;
+}
+
+.gif-check 
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.get-image-btn
+{
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #67595E;
+    color: #EED6D3;
+    padding: 10px 40px;
+    font-size: 30px;
+}

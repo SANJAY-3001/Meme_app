@@ -7,12 +7,8 @@ body
     background-color: #706d6e;
 }
 
-.container
-{
-    width: 500px;
-    border: 1px solid black;
-    margin: 20px auto;
-}
+
+/* typography */
 
 h1 , h3{
     margin: 0;
@@ -22,6 +18,15 @@ h1 , h3{
 h2{
     text-align: center;
 }
+
+/* layout */
+.container
+{
+    width: 500px;
+    border: 1px solid black;
+    margin: 20px auto;
+}
+
 
 header
 {
@@ -111,4 +116,62 @@ input[type="checkbox"]
     color: #EED6D3;
     padding: 10px 40px;
     font-size: 30px;
+}
+
+
+/* Modal */
+
+.modal
+{
+    display: none;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(233, 154, 154);
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+.modal-close-btn-container
+{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.modal-close-btn
+{
+    border: none;
+    background-color: rgb(233, 154, 154);
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.modal-close-btn:hover , .modal-close-btn:focus
+{
+    color: red;
+    cursor: pointer;
+}
+
+.modal-inner
+{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meme-img
+{
+    width: 400px;
+    height: 400px;
 }

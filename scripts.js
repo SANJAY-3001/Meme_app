@@ -3,7 +3,22 @@ import { catsData } from "./data.js"
 const radioEmotions = document.getElementById('radio-emotions')
 
 
-function getEmotionCatArray()
+radioEmotions.addEventListener('change' , highlightCheckedOption)
+
+
+function highlightCheckedOption(e)
+{
+    const radios = document.getElementsByClassName('radio-emotion')
+
+    for (let radio of radios)
+    {
+        radio.classList.remove('highlight')
+    }
+
+    document.getElementById(e.target.id).parentElement.classList.add('highlight')
+}
+
+function getEmotionCatArray(catsData)
 {
     let emotionCatArray = []
 
@@ -22,11 +37,11 @@ function getEmotionCatArray()
 
 }
 
-function renderEmotionRadios()
+function renderEmotionRadios(cats)
 {
     let emotionRadios = ""
 
-    const emotionCatArray = getEmotionCatArray()
+    const emotionCatArray = getEmotionCatArray(cats)
     
     for(let emotion of emotionCatArray)
     {
@@ -36,7 +51,7 @@ function renderEmotionRadios()
             <input
             type="radio"
             id="${emotion}"
-            name="emotion"
+            name="emotions"
             value="${emotion}"
             >
         </div>
@@ -46,4 +61,4 @@ function renderEmotionRadios()
     radioEmotions.innerHTML = emotionRadios
 }
 
-renderEmotionRadios()
+renderEmotionRadios(catsData)
